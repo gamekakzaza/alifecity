@@ -1,4 +1,5 @@
 import requests
+import os
 from requests import post,Session
 import sys
 import threading
@@ -19,8 +20,8 @@ Alife City Developer ใช้ในการยิงเบอร์
               
 	""")
 
-	phone = input("\033[95m+ เบอร์ : \033[0m")
-	num = int(input("\033[95m+ จำนวน : \033[0m"))
+	phone = input("+ เบอร์ : ")
+	num = int(input("+ จำนวน : "))
 	os.system("clear")
 		
 def alifecity(): 

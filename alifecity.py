@@ -7,9 +7,9 @@ phone = ""
 amount = ""
 
 
-if len(sys.alak)==3:
-	phone = sys.alak[1]
-	amount = int(sys.alak[2])
+if len(sys.argv)==3:
+	phone = sys.argv[1]
+	amount = int(sys.argv[2])
 	
 else:
 	print("""

